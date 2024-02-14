@@ -8,20 +8,10 @@ function showElementId(id){
     element.classList.remove('hidden')
 }
 
-// function alphabetString(){
-//     let words = 'abcdefghijklmnopqrstuvwxyz';
-//     let letters = words.split('');
-//     // console.log(letters)
-
-//     let randomalphabet = Math.random()*25;
-//     let index = Math.round(randomalphabet);
-    
-
-//     const letter = letters[index];
-//     // console.log(index, letter);
-//     return letter;
-// }
-
+function setElementText(id){
+    let element = document.getElementById(id)
+    element.classList.add('bg-amber-500')
+}
 function alphabetString(){
     let alphabets = 'abcdefghijklmnopqrstuvwxyz';
     let letter = alphabets.split('');

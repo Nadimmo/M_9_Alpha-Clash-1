@@ -2,6 +2,7 @@ function play(){
     hiddenElementId('home-screen')
     showElementId('playGround')
     continueGame()
+    
 
     // let home = document.getElementById('home-screen');
     // home.classList.add('hidden')
@@ -14,6 +15,11 @@ function play(){
 
 function continueGame(){
     const alphabet = alphabetString();
-    console.log('your random alphabet', alphabet)
+    // console.log('your random alphabet', alphabet)
+
+    let current = document.getElementById(' current-alphabet');
+    current.innerText = alphabet.toUpperCase();
+
+    setElementText(alphabet)
 }
 
