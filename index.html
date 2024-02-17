@@ -96,13 +96,14 @@
         </section>
 
         <!-- Score -->
-        <section class="score justify-center items-center min-h-screen hidden">
-            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
-                <h1 class="text-8xl">
+        <section id="ShowScore" class="score  min-h-screen pt-[200px] hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg w-[400px] h-[300px] justify-center items-center relative ml-[400px]">
+                <h3>Game Over !</h3>
+                <h1 class="text-6xl">
                     <span>Score:</span>
-                    <span>14</span>
+                    <span id="finalScore">14</span>
                 </h1> 
-                <button class="btn">Play Now</button>
+                <button class="btn" onclick="play()">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>    
