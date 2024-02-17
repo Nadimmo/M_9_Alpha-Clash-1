@@ -1,10 +1,10 @@
 
-function showElementId(elementID){
+function  hiddenElementId(elementID){
     const element = document.getElementById(elementID);
     element.classList.add('hidden');
 }
 
-function hiddenElementId(elementID){
+function showElementId(elementID){
     const element = document.getElementById(elementID);
     element.classList.remove('hidden');
 }
@@ -15,21 +15,31 @@ function setElementTextColor(elementID){
 }
 function removeElementTextColor(elementID){
     const element = document.getElementById(elementID);
-    element.classList.remove('bg-orange-500');
+    element.classList.remove('bg-orange-500')
+}
+function setElementByID(elementID){
+    const element = document.getElementById(elementID);
+   let text = element.innerText.toLowerCase();
+   return text
+}
+function setTextElementValueByID(elementID, value){
+    const element = document.getElementById(elementID);
+    element.innerText = value;
 }
 
-function getValuebyID(elementID){
-    const currentScore = document.getElementById(elementID);
-    const currentScoreValue = parseInt(currentScore.innerText);
-    let newScore = currentScoreValue + 1;
-    currentScore.innerText = newScore;
-}
-function getValuebyID2(elementID){
-    const currentScore = document.getElementById(elementID);
-    const currentScoreValue = parseInt(currentScore.innerText);
-    let newScore = currentScoreValue - 1;
-    currentScore.innerText = newScore;
-}
+
+// function getValuebyID(elementID){
+//     const currentScore = document.getElementById(elementID);
+//     const currentScoreValue = parseInt(currentScore.innerText);
+//     let newScore = currentScoreValue + 1;
+//     currentScore.innerText = newScore;
+// }
+// function getValuebyID2(elementID){
+//     const currentScore = document.getElementById(elementID);
+//     const currentScoreValue = parseInt(currentScore.innerText);
+//     let newScore = currentScoreValue - 1;
+//     currentScore.innerText = newScore;
+// }
 
 // create randomly array for alphabet
 function alphabetString(){
